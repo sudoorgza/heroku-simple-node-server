@@ -5,7 +5,7 @@ console.log(server);
     server.deploy(
         {
             verbose: true,
-            port: 39390,
+            port: process.env.PORT,
             root: '/'
         }
     );
