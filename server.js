@@ -5,7 +5,7 @@ console.log(server);
     server.deploy(
         {
             verbose: true,
-            port: process.env.PORT,
+            port: (process.env.PORT || 3000),
             root: __dirname+'/'
         }
     );
